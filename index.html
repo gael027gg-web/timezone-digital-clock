@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reloj Digital - Múltiples Zonas Horarias</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>🕐 Reloj Digital Global</h1>
+        <p class="subtitle">Hora en diferentes zonas horarias</p>
+        
+        <div class="controls">
+            <input type="text" id="timezoneInput" placeholder="Agregar zona horaria (ej: America/New_York)">
+            <button onclick="agregarZonaHoraria()">Agregar</button>
+        </div>
+        
+        <div id="clocksContainer" class="clocks-container">
+            <!-- Los relojes se generarán dinámicamente aquí -->
+        </div>
+        
+        <div class="info">
+            <h3>Zonas horarias disponibles:</h3>
+            <div id="timezonesInfo" class="timezones-list"></div>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
